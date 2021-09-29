@@ -20,7 +20,7 @@ function guardarContacto (e){
         contactos.push(contacto);
         localStorage.setItem('contactos', JSON.stringify(contactos));
     }
-    document.getElementById('guardarContacto').requestFullscreen();
+    document.getElementById('guardarContacto').reset();
     e.preventDefault();
 }
 function mostrarContactos (){
